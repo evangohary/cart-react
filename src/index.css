@@ -1,4 +1,6 @@
-
+html {
+  background-color: #111;
+}
 
 body {
   font-family: Helvetica, Arial, sans-serif;
@@ -10,6 +12,8 @@ h1, h2, h3 {
 h1 {
   font-size: 1.5rem;
   text-shadow: 1px 1px black;
+  color: #FF7F50;
+  border-bottom: 2px solid #333;
 }
 h2 {
   font-size: 1.2rem;
@@ -19,12 +23,22 @@ h3 {
 }
 a {
   text-decoration: none;
+  color: #FF7F50;
+  text-shadow: 1px 1px black;
+}
 
+
+.cartt-hold {
+  display: flex;
+  
+}
+.cartt {
+  margin-left: 2rem;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 .col-1 {
@@ -32,6 +46,14 @@ a {
 }
 .col-2 {
   flex: 2;
+}
+
+
+
+
+
+.text-center {
+  text-align: center;
 }
 .block {
   background-color: #888;
@@ -45,7 +67,7 @@ a {
 }
 img.small {
   max-height: 8rem;
-
+  
 }
 
 button {
@@ -53,20 +75,26 @@ button {
   padding: .2rem;
   margin: .1rem;
   border-radius: .5rem;
-  background-color: yellow;
+  background-color: #FF7F50;
   width: 100%;
   cursor: pointer;
-  color: #111;
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px black;
 }
 
 button.add {
-  background-color: #999;
+  background-color: #ff7f50;
   width: 1.5rem;
+  color: #111;
 }
+button.add:hover {
+  background-color: #fa632c;
+}
+
 button.remove {
   background-color: #fff;
   width: 1.5rem;
+  color: #FF7F50;
 }
 button.badge {
   background-color: #FF7F50;
@@ -76,4 +104,30 @@ button.badge {
 }
 .text-right {
   text-align: right;
+}
+
+@media (max-width: 950px){
+  .row {
+    flex-direction: column;
+  }
+  button {
+    width: 40% !important;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  img.small {
+    max-height: 20rem;
+    max-width: 80vw;
+    
+  }
+  h1 {
+    margin-bottom: 1rem;
+    
+  }
+}
+
+@media (max-width: 510px){
+  button {
+    width: 90% !important;
+  }
 }

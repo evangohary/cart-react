@@ -10,8 +10,8 @@ export default function Header(props) {
                     <h1>Small Shopping Cart</h1>
                 </a>
             </div>
-            <div>
-                <a href="#/cart">
+            <div className="cartt-hold">
+                <a href="#/cart" >
                     
                     Cart { ' '}
                     {countCartItems? (
@@ -21,7 +21,7 @@ export default function Header(props) {
                     )}
                 
                 </a> {' '}
-                <a href="#/signin">Sign In</a>
+                <a href="#/signin" className="cartt">Sign In</a>
             </div>
         </header> 
     )

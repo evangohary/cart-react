@@ -4,7 +4,7 @@ const data = {
         id: '1', 
         name: 'Macbook',
         price: 1400,
-        image: 'https://images.pexels.com/photos/5231332/pexels-photo-5231332.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+        image: 'https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     },
     {
         id: '2', 
